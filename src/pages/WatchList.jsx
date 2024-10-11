@@ -2,8 +2,7 @@ import { useEffect, useState } from "react"
 import { useAuth } from "../context/useAuth"
 import { useFireStore } from "../services/firestore"
 import { Container, Flex, Grid, Heading, Spinner } from "@chakra-ui/react"
-import { base } from "framer-motion/client"
-import WatchlistCard from "../components/watchlistCard"
+import WatchlistCard from "../components/WatchlistCard"
 
 
 
