@@ -3,8 +3,6 @@ import { Link } from "react-router-dom"
 import { imgUrl } from "../services/api"
 import { StarIcon } from "@chakra-ui/icons"
 
-
-
 const CardComponent = ({ item, type }) => {
 
     return (
@@ -54,6 +52,5 @@ const CardComponent = ({ item, type }) => {
         </Link>
     )
 }
-
 
 export default CardComponent
