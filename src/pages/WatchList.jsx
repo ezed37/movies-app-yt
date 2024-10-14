@@ -4,12 +4,9 @@ import { useFireStore } from "../services/firestore"
 import { Container, Flex, Grid, Heading, Spinner } from "@chakra-ui/react"
 import WatchlistCard from "../components/WatchlistCard"
 
-
-
 const WatchList = () => {
 
     const { getWatchlist } = useFireStore()
-
     const { user } = useAuth()
 
     const [watchlist, setWatchlist] = useState([])
@@ -29,7 +26,6 @@ const WatchList = () => {
         }
     }, [user?.uid, getWatchlist])
     
-
     return (
         <Container maxW={"container.xl"}>
             <Flex alignItems={"baseline"} gap={"4"} my={"10"}>

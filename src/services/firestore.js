@@ -3,8 +3,6 @@ import { db } from "../services/firebase";
 import { addDoc, collection, deleteDoc, doc, getDoc, getDocs, query, setDoc } from "firebase/firestore";
 import { useCallback } from "react";
 
-
-
 export const useFireStore = () => {
 
     const toast = useToast();
@@ -50,9 +48,7 @@ export const useFireStore = () => {
 
     const checkIfInWatchlist = async (userId, dataId) => {
         const docRef = doc(db, "users", userId?.toString(), "watchlist", dataId?.toString());
-
         const docSnap = await getDoc(docRef);
-
         if (docSnap.exists()) {
             return true;
         } else {
@@ -85,10 +81,8 @@ export const useFireStore = () => {
         const data = querySnapShot.docs.map((doc) => ({
             ...doc.data()
         }))
-
         return data
     }, [])
-
 
     return {
         addDocument,
@@ -97,7 +91,6 @@ export const useFireStore = () => {
         removeFromWatchlist,
         getWatchlist,
     };
-
 };
 
 

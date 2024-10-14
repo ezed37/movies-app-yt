@@ -5,8 +5,6 @@ import { imgUrl } from "../services/api"
 import { CheckIcon, StarIcon } from "@chakra-ui/icons"
 import { Link } from "react-router-dom"
 
-
-
 const WatchlistCard = ({ type, item, setWatchlist }) => {
 
     const { removeFromWatchlist } = useFireStore()

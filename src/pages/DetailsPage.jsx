@@ -1,6 +1,18 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
-import { Badge, Box, Button, CircularProgress, CircularProgressLabel, Container, Flex, Heading, Image, Spinner, Text, useToast } from "@chakra-ui/react";
+import { 
+    Badge, 
+    Box, 
+    Button, 
+    CircularProgress, 
+    CircularProgressLabel, 
+    Container, 
+    Flex, 
+    Heading, 
+    Image, 
+    Spinner, 
+    Text, 
+    useToast } from "@chakra-ui/react";
 import { fetchCredits, fetchDetails, fetchVideos, imgUrl, imgUrlOriginal } from "../services/api";
 import { CalendarIcon, CheckCircleIcon, SmallAddIcon, TimeIcon } from "@chakra-ui/icons";
 import { minutesToHours, ratingToPercentage, resolveRatingColor } from "../utils/helpers";
